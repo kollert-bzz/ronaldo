@@ -1,3 +1,40 @@
-*{
-    background: #ffffa0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #000;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li{
+    list-style: none;
+    position: relative;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav li a:hover,
+nav li a.active{
+    color: #00FBFF;
 }
