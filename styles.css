@@ -8,38 +8,46 @@ body {
     background: #fff;
 }
 
-header {
+.logo{
+    width: 60px;
+    height: auto;
+}
+
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background: #000;
-    position: sticky;
     z-index: 1000;
     top: 0;
+    left: 0;
+    position: sticky;
 }
 
-nav {
+#navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav li {
+#navbar li{
     list-style: none;
+    padding: 0 18px;
     position: relative;
 }
 
-nav li a {
+#navbar li a{
     text-decoration: none;
     font-size: 16px;
     color: #fff;
 }
 
-nav li a:hover,
-nav li a.active {
-    color: #00FBFF;
+#navbar li a:hover,
+#navbar li a.active{
+    color: #FEBE10;
 }
+
 
 .banner {
     background-image: url("img/cr7_banner1.jpg");
@@ -106,6 +114,16 @@ nav li a.active {
     display: block;
     text-decoration: none;
     transition: transform 0.3s ease;
+}
+
+.social-media a img{
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+#twitter:hover{
+    background-color: black;
 }
 
 .social-media a:hover {
