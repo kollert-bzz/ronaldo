@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     instagramLink.addEventListener('mouseout', function() {
         instagramImg.src = 'https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-black-glyph.png';
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     const twitterLink = document.querySelector('#twitter');
     const twitterImg = twitterLink.querySelector('img');
 
@@ -22,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     twitterLink.addEventListener('mouseout', function() {
         twitterImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/2048px-X_logo_2023_original.svg.png';
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     const facebookLink = document.querySelector('#facebook');
     const facebookImg = facebookLink.querySelector('img');
 
@@ -35,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     facebookLink.addEventListener('mouseout', function() {
         facebookImg.src = 'https://allfacebook.de/wp-content/uploads/2020/02/f_logo_RGB-Black_1024.png';
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     const cr7_websiteLink = document.querySelector('#cr7_website');
     const cr7_websiteImg = cr7_websiteLink.querySelector('img');
 
@@ -48,4 +42,23 @@ document.addEventListener("DOMContentLoaded", function() {
     cr7_websiteLink.addEventListener('mouseout', function() {
         cr7_websiteImg.src = 'https://static.vecteezy.com/system/resources/previews/010/994/282/non_2x/cr7-logo-symbol-black-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg';
     });
+
+    var slides = $('.slide');
+    var currentSlide = 0;
+
+    function showSlide(n) {
+        slides.removeClass('active');
+        slides.eq(n).addClass('active');
+    }
+
+    function nextSlide() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }
+
+    // Automatisches Wechseln der Folien alle 5 Sekunden
+    setInterval(nextSlide, 5000);
 });
