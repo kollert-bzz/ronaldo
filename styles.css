@@ -8,12 +8,12 @@ body {
     background: #fff;
 }
 
-.logo{
+.logo {
     width: 60px;
     height: auto;
 }
 
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,29 +25,28 @@ body {
     position: sticky;
 }
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 18px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
 }
 
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
     color: #FEBE10;
 }
-
 
 .banner {
     background-image: url("img/cr7_banner1.jpg");
@@ -116,13 +115,13 @@ body {
     transition: transform 0.3s ease;
 }
 
-.social-media a img{
+.social-media a img {
     height: 60px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
-#twitter:hover{
+#twitter:hover {
     background-color: black;
 }
 
@@ -167,16 +166,34 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#juniors{
+#juniors {
     margin-top: 40px;
 }
 
-#andorinha{
-    margin-left: 6.8px
+#andorinha {
+    margin-left: 6.8px;
 }
 
-#juventus img{
+#juventus img {
     width: 100px;
     margin-left: 27px;
     margin-right: 33px;
+}
+
+/* Neue CSS-Stile für Spielstatistiken und Stand */
+.details {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #555;
+}
+
+.details p {
+    margin-bottom: 5px;
+}
+
+.stand {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    margin-left: 20px;
 }
