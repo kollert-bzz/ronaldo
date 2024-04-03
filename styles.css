@@ -41,12 +41,31 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: '';
+    width: 65%;
+    height: 2px;
+    background: #FEBE10;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    border-radius: 20px;
+    transition: width 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active {
+    position: relative;
     color: #FEBE10;
+    text-decoration: none;
+    transition: width 0.3s ease;
 }
+
 
 .banner {
     background-image: url("img/cr7_banner1.jpg");
@@ -180,7 +199,7 @@ body {
     margin-right: 33px;
 }
 
-/* Neue CSS-Stile für Spielstatistiken und Stand */
+
 .details {
     font-size: 16px;
     margin-left: 20px;
