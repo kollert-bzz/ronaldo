@@ -281,6 +281,6 @@ body {
     max-height: 250px;
     border-radius: 10px;
     overflow: hidden;
-    background-image: url("img/background_gif_edited.gif");
+    background-image: url("img/background_gif.gif");
     border: 4px solid transparent;
 }
