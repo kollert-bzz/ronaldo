@@ -284,3 +284,8 @@ body {
     background-image: url("img/background_gif.gif");
     border: 4px solid transparent;
 }
+
+.slide img:hover{
+    max-height: 275px;
+    cursor: pointer;
+}
