@@ -64,6 +64,25 @@ body {
     transition: width 0.3s ease;
 }
 
+#navbar li a.active:hover{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: width 0.3s ease;
+}
+
+#navbar li a.active:hover::after{
+    content: '';
+    width: 65%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
 #navbar li a:hover,
 #navbar li a.active {
     position: relative;
@@ -106,6 +125,11 @@ body {
 #introduction3{
     background: rgb(218,41,28);
     background: linear-gradient(135deg, rgba(218,41,28,1) 4%, rgba(255,255,255,1) 80%);
+}
+
+#introduction4{
+    background: rgb(9,9,121);
+    background: linear-gradient(135deg, rgba(9,9,121,1) 4%, rgba(0,255,85,0.40948879551820727) 80%);
 }
 
 .container {
