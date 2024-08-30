@@ -408,10 +408,69 @@ body {
     border-radius: 20px;
 }
 
-#bio-img1 img{
+.bio-img img{
     position: absolute;
     margin-left: 775px;
     margin-top: -201px;
     width: 670px;
     height: auto;
+}
+
+
+
+#hobby {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#hobby > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+}
+
+#me-hobby{
+    float: left;
+    width: 33.33%;
+}
+
+#hobby h1{
+    text-align: center;
+}
+
+#hobby p{
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+#hobby img{
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+#hobby:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#me-school{
+    float: left;
+    width: 33.33%;
+}
+
+#me-family{
+    float: left;
+    width: 33.33%;
 }
